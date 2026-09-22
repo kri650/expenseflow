@@ -14,7 +14,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar.jsx";
 import ExpenseCard from "../components/ExpenseCard.jsx";
-import { getDashboard, getExpenses, addFunds } from "../services/api.js";
+import { getDashboard, getExpenses, addFunds, BASE_URL } from "../services/api.js";
 
 export default function Dashboard() {
   const navigate = useNavigate();
@@ -42,7 +42,7 @@ export default function Dashboard() {
       setRecentExpenses([...expenses].reverse().slice(0, 5));
       setLoadError("");
     } catch (err) {
-      setLoadError("Could not reach the backend. Is it running on port 8000?");
+      setLoadError(`Could not reach the backend at ${BASE_URL}.`);
     } finally {
       setLoading(false);
     }

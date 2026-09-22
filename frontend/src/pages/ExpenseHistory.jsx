@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar.jsx";
 import ExpenseCard from "../components/ExpenseCard.jsx";
 import ExpenseForm from "../components/ExpenseForm.jsx";
-import { getExpenses, updateExpense, deleteExpense } from "../services/api.js";
+import { getExpenses, updateExpense, deleteExpense, BASE_URL } from "../services/api.js";
 
 const CATEGORY_OPTIONS = ["All", "Food", "Shopping", "Travel", "Bills", "Education", "Others"];
 
@@ -30,7 +30,7 @@ export default function ExpenseHistory() {
       setExpenses(data);
       setLoadError("");
     } catch (err) {
-      setLoadError("Could not reach the backend. Is it running on port 8000?");
+      setLoadError(`Could not reach the backend at ${BASE_URL}.`);
     } finally {
       setLoading(false);
     }

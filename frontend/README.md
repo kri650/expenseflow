@@ -5,6 +5,9 @@ React app built with Vite. Talks to the deployed FastAPI backend at
 
 Deployed frontend: https://expenseflow-ten-ruddy.vercel.app/dashboard
 
+For Vercel builds, set `VITE_API_BASE_URL` to:
+`https://expenseflow-7tdl.vercel.app`
+
 ## Setup
 
 ```bash
