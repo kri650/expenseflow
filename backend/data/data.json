@@ -1,0 +1,32 @@
+{
+  "funds": 12400.0,
+  "expenses": [
+    {
+      "id": "EXP-001",
+      "name": "abc",
+      "amount": 1400.0,
+      "category": "Food",
+      "date": "2026-09-16",
+      "payment_method": "Cash",
+      "description": "no"
+    },
+    {
+      "id": "EXP-002",
+      "name": "AL/ML",
+      "amount": 100.0,
+      "category": "Food",
+      "date": "2026-09-16",
+      "payment_method": "Cash",
+      "description": "nope"
+    },
+    {
+      "id": "EXP-003",
+      "name": "New Property",
+      "amount": 500.0,
+      "category": "Others",
+      "date": "2026-09-22",
+      "payment_method": "Cash",
+      "description": "xyz"
+    }
+  ]
+}
