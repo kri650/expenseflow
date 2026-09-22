@@ -14,6 +14,11 @@ cd backend
 pip install -r requirements.txt
 ```
 
+## Vercel deploy
+
+Set the Vercel project root directory to `backend`. The `vercel.json` file
+rewrites all routes to `api/index.py`, which exposes the FastAPI `app`.
+
 ## Run
 
 ```bash
