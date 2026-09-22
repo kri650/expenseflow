@@ -2,6 +2,7 @@
 
 A simple full-stack expense tracker: React (frontend) + FastAPI (backend) + a JSON file (storage).
 
+Deployed frontend: https://expenseflow-ten-ruddy.vercel.app/dashboard
 Deployed backend: https://expenseflow-7tdl.vercel.app
 
 ## Quick start
@@ -23,6 +24,9 @@ npm install
 npm run dev
 ```
 Runs at http://localhost:5173 ← **open this one in your browser**
+
+The deployed frontend is available at:
+https://expenseflow-ten-ruddy.vercel.app/dashboard
 
 ## Requirements on your machine
 

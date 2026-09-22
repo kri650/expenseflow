@@ -3,6 +3,7 @@
 FastAPI server that handles all data operations. Stores data in `data/data.json`.
 
 Deployed URL: https://expenseflow-7tdl.vercel.app
+Allowed deployed frontend: https://expenseflow-ten-ruddy.vercel.app
 
 ## Setup
 

@@ -3,6 +3,8 @@
 React app built with Vite. Talks to the deployed FastAPI backend at
 `https://expenseflow-7tdl.vercel.app`.
 
+Deployed frontend: https://expenseflow-ten-ruddy.vercel.app/dashboard
+
 ## Setup
 
 ```bash
