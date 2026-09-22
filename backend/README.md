@@ -2,6 +2,8 @@
 
 FastAPI server that handles all data operations. Stores data in `data/data.json`.
 
+Deployed URL: https://expenseflow-7tdl.vercel.app
+
 ## Setup
 
 ```bash

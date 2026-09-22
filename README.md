@@ -2,6 +2,8 @@
 
 A simple full-stack expense tracker: React (frontend) + FastAPI (backend) + a JSON file (storage).
 
+Deployed backend: https://expenseflow-7tdl.vercel.app
+
 ## Quick start
 
 You need **two terminals** open at the same time — one for the backend, one for the frontend.
@@ -12,7 +14,7 @@ cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
-Runs at http://127.0.0.1:8000
+Runs locally at http://127.0.0.1:8000
 
 **Terminal 2 — frontend**
 ```bash
@@ -44,6 +46,9 @@ React app  --- Axios request --->  FastAPI (localhost:8000)
 
 The React app never touches the JSON file directly — every action goes
 through the FastAPI backend.
+
+In the current frontend code, API requests go to the deployed backend:
+https://expenseflow-7tdl.vercel.app
 
 ## What's inside
 

@@ -1,6 +1,7 @@
 # ExpenseFlow — Frontend
 
-React app built with Vite. Talks to the FastAPI backend at `http://127.0.0.1:8000`.
+React app built with Vite. Talks to the deployed FastAPI backend at
+`https://expenseflow-7tdl.vercel.app`.
 
 ## Setup
 
@@ -10,9 +11,6 @@ npm install
 ```
 
 ## Run
-
-**Make sure the backend is running first** (see `../backend/README.md`),
-then in a separate terminal:
 
 ```bash
 npm run dev
