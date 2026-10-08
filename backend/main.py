@@ -45,9 +45,7 @@ def create_expense(expense: ExpenseCreate):
     return services.create_expense(expense)
 
 
-# NEW: same route, now with optional filters/sorting/pagination.
-# With no query parameters it returns the full list exactly as before,
-# so the live React app keeps working.
+
 @app.get("/expenses")
 def list_expenses(
     category: Optional[str] = None,

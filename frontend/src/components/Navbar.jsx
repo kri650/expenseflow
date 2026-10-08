@@ -1,5 +1,3 @@
-
-
 import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext.jsx";
 
@@ -11,6 +9,7 @@ export default function Navbar() {
     { to: "/dashboard", label: "Dashboard" },
     { to: "/add-expense", label: "Add Expense" },
     { to: "/history", label: "History" },
+    { to: "/reports", label: "Reports" },
   ];
 
   return (
@@ -19,6 +18,8 @@ export default function Navbar() {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
+        flexWrap: "wrap",
+        gap: 12,
         padding: "18px 24px",
         borderBottom: "1px solid var(--border)",
         background: "var(--surface)",
@@ -37,7 +38,7 @@ export default function Navbar() {
         ExpenseFlow
       </Link>
 
-      <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 4, flexWrap: "wrap" }}>
         {links.map((link) => (
           <Link
             key={link.to}
